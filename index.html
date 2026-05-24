@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuretrusure Investment</title>
+
+
+<link href="v.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIGNUP -->
+<div id="signupPage" class="glass signup-box">
+
+<h1>Future<span>trusure</span></h1>
+
+<input type="text" id="username" placeholder="Username">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="openDashboard()">Sign Up</button>
+
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboardPage" class="glass dashboard hidden">
+
+<div class="topbar">
+<h2>Futuretrusure Dashboard</h2>
+<h3 id="welcomeUser"></h3>
+</div>
+
+<div class="glass owner-box">
+<h3>Platform Owners</h3>
+<p>Alia</p>
+<p>Hafsa</p>
+</div>
+
+<div class="glass balance-box">
+<h3>Total Balance</h3>
+<h1>0 PKR</h1>
+</div>
+
+<h2>Investment Plans</h2>
+
+<div class="plan-grid">
+
+<div class="glass plan-card">
+<h3>Starter Plan</h3>
+<div class="price">100 PKR</div>
+<button>Invest Now</button>
+</div>
+
+<div class="glass plan-card">
+<h3>Premium Plan</h3>
+<div class="price">200 PKR</div>
+<button>Invest Now</button>
+</div>
+
+<div class="glass plan-card">
+<h3>Premium Unlimited</h3>
+<div class="price">500-2000 PKR</div>
+<button>Invest Now</button>
+</div>
+
+</div>
+
+<!-- WITHDRAW -->
+<h2 style="margin-top:25px;">Withdraw Methods</h2>
+
+<div class="plan-grid">
+
+<div class="glass plan-card">
+<h3>JazzCash</h3>
+<input type="text" id="jazzNumber" placeholder="Number">
+<input type="text" id="jazzName" placeholder="Holder Name">
+<button onclick="withdrawJazzcash()">Withdraw</button>
+</div>
+
+<div class="glass plan-card">
+<h3>EasyPaisa</h3>
+<input type="text" id="easyNumber" placeholder="Number">
+<input type="text" id="easyName" placeholder="Holder Name">
+<button onclick="withdrawEasypaisa()">Withdraw</button>
+</div>
+
+</div>
+
+<!-- REFERRAL -->
+<h2 style="margin-top:25px;">Member Invite Link</h2>
+
+<div class="glass plan-card">
+
+<h3>Your Referral Link</h3>
+
+<input type="text" id="refLink" readonly>
+<button onclick="copyLink()">Copy Link</button>
+
+</div>
+
+</div>
+
+</div>
+<script src="l.js"></script>
+
+</body>
+</html>
